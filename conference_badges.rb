@@ -2,7 +2,7 @@
 array = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
 
 def badge_maker(name)
-  puts "Hello, my name is #{name}."
+  return "Hello, my name is #{name}."
 end
 
 def batch_badge_creator(array)
@@ -25,10 +25,10 @@ end
 
 def printer(array)
   batch_badge_creator.each(array) do |id|
-    puts id
+    return id
   end
   
   assign_rooms(array).each do |id|
-    puts id
+    return id
   end
 end
